@@ -1,0 +1,18 @@
+https://www.acmicpc.net/problem/2609
+
+#include <stdio.h>
+
+int main() {
+	int x,y,i;
+    int min;
+    
+	scanf("%d %d", &x,&y);
+
+	for (i = 1; i<=x && i<=y; i++) {
+		if (x%i==0 && y%i==0)
+			min=i;	
+	}
+	
+	printf("%d\n", min);
+	printf("%d", x*y/min);
+}

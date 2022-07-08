@@ -1,0 +1,11 @@
+https://www.acmicpc.net/problem/2163
+
+#include <stdio.h>
+
+int main() {
+	int x, y;
+	scanf("%d %d", &x,&y);
+	int cnt = x*y-1;
+	printf("%d", cnt);
+	return 0;
+}

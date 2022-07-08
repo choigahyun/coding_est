@@ -1,0 +1,21 @@
+https://www.acmicpc.net/problem/1978
+
+
+#include <stdio.h>
+ 
+int main() {
+    int n, num, i, cnt = 0;
+    scanf("%d", &n);
+ 
+    while (n>0) {
+        scanf("%d", &num);
+        for (i = 2; i < num; i++) {
+            if (num%i == 0) 
+                break;
+        }
+        if (i == num) cnt++;
+        n--;
+    }
+    printf("%d\n", cnt);
+    return 0;
+}
